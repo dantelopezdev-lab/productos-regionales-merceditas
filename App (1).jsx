@@ -6,8 +6,7 @@ import {
 } from 'lucide-react';
 
 // ==========================================
-// PÁGINA 1: INICIO (CONSUMO DE API PÚBLICA GITHUB)
-// Requisito A: API pública con >= 3 datos e imagen obligatoria
+// PÁGINA 1
 // ==========================================
 function InicioPage({ setActiveTab }) {
   const [profile, setProfile] = useState(null);
@@ -126,7 +125,7 @@ function InicioPage({ setActiveTab }) {
         </div>
       </section>
 
-      {/* SECCIÓN OBLIGATORIA: Consumo de API Pública GitHub */}
+      {/* API */}
       <section style={{
         backgroundColor: '#ffffff',
         padding: '2.5rem',
@@ -191,7 +190,7 @@ function InicioPage({ setActiveTab }) {
               </div>
             </div>
 
-            {/* Mínimo 3 datos mostrados de la API */}
+            {/* 3 */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
               <div style={{ background: '#faf5f0', padding: '1rem', borderRadius: '10px', textAlign: 'center' }}>
                 <BookOpen size={22} color="#78281f" style={{ margin: '0 auto 6px' }} />
@@ -217,8 +216,7 @@ function InicioPage({ setActiveTab }) {
 }
 
 // ==========================================
-// PÁGINA 2: CATÁLOGO LOCAL (ARRAY DE OBJETOS)
-// Requisito B: Array de objetos local con imágenes
+// PÁGINA 2
 // ==========================================
 function CatalogoPage() {
   const [categoria, setCategoria] = useState('todas');
@@ -406,8 +404,7 @@ function CatalogoPage() {
 }
 
 // ==========================================
-// PÁGINA 3: CONTACTO FUNCIONAL Y MAPA EMBEBIDO
-// Requisito C: Formulario funcional (envío a email) + Mapa embebido al lado
+// PÁGINA 3
 // ==========================================
 function ContactoPage() {
   const [formData, setFormData] = useState({
@@ -629,7 +626,7 @@ function ContactoPage() {
 }
 
 // ==========================================
-// COMPONENTE PRINCIPAL APP
+// COMPONENTE
 // ==========================================
 export default function App() {
   const [activeTab, setActiveTab] = useState('inicio');
